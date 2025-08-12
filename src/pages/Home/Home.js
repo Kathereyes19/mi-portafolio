@@ -1,14 +1,17 @@
 import React from 'react';
 import './Home.css';
+import { useTranslation } from 'react-i18next';
 
 // Logo único (blanco para fondo oscuro y claro)
-import logoWhite from '../../assets/img/logo-banner.png';
+import logoWhite from '../../assets/img/logo-darkII.png';
 
 // Texturas laterales
 import textureLeft from '../../assets/img/texture.png';
 import textureRight from '../../assets/img/texture.png';
 
 const Home = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="home">
       <img src={textureLeft} alt="Decoración izquierda" className="home-texture left" />
@@ -21,7 +24,7 @@ const Home = () => {
             className="home-logo"
           />
           <p className="home-subtitle">
-            Diseñadora de medios interactivos | Comunicadora con enfoque digital
+            {t('home.subtitle')}
           </p>
         </div>
       </div>
@@ -32,3 +35,4 @@ const Home = () => {
 };
 
 export default Home;
+
