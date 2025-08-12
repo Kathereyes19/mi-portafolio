@@ -7,6 +7,7 @@ import Footer from './components/Footer/Footer';
 
 // Páginas
 import Home from './pages/Home/Home';
+import Focus from './components/Focus/Focus';
 import About from './pages/About/About';
 import Experience from './pages/Experience/Experience';
 import Projects from './pages/Projects/Projects';
@@ -19,6 +20,7 @@ function App() {
       <Header />
       <main>
         <Home />
+        <Focus />
         <About />
         <Experience />
         <Projects />

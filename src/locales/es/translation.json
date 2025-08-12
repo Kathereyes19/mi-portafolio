@@ -10,5 +10,13 @@
   },
   "home": {
     "subtitle": "Diseñadora de medios interactivos | Comunicadora con enfoque digital"
-  }
+  },
+  "focus": {
+    "uxui": "Diseño UX/UI",
+    "branding": "Branding",
+    "identity": "Identidad Visual",
+    "multimedia": "Producción Multimedia",
+    "strategy": "Estrategia de marca",
+    "graphic": "Diseño Gráfico"
+  } 
 }

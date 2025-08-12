@@ -10,6 +10,15 @@
   },
   "home": {
     "subtitle": "Interactive Media Designer | Digital Communication Specialist"
+  },
+  "focus": {
+    "uxui": "UX/UI Design",
+    "branding": "Branding",
+    "identity": "Visual Identity",
+    "multimedia": "Multimedia Production",
+    "strategy": "Brand Strategy",
+    "graphic": "Graphic Design"
+    
   }
 }
 
