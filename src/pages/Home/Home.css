@@ -1,0 +1,66 @@
+.home {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  background: linear-gradient(to right, #020151, #940466);
+  overflow: hidden;
+}
+
+/* Centrado vertical y horizontal */
+.home-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Logo mucho más grande */
+.home-logo {
+  width: 520px; /* Fijo en escritorio */
+  height: auto;
+  z-index: 2;
+}
+
+/* Texturas laterales */
+.home-texture {
+  position: relative; /* Participa en el flujo */
+  height: 100%;
+  max-height: 100%;
+  opacity: 1; /* Sin transparencia */
+  pointer-events: none;
+}
+
+.home-texture.left {
+  order: -1; /* Primero en el flex */
+}
+
+.home-texture.right {
+  order: 1;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .home-logo {
+    max-width: 420px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem 0;
+  }
+  
+  .home-logo {
+    max-width: 280px;
+  }
+
+  .home-texture {
+    width: 100%;
+    height: auto;
+    max-height: none;
+  }
+}

@@ -1,11 +1,29 @@
 import React from 'react';
 import './Home.css';
 
-export default function Home() {
+// Logo único (blanco para fondo oscuro y claro)
+import logoWhite from '../../assets/img/logo-darkII.png';
+
+// Texturas laterales
+import textureLeft from '../../assets/img/texture.png';
+import textureRight from '../../assets/img/texture.png';
+
+const Home = () => {
   return (
-    <section id="home">
-      <h2>Bienvenido a mi portafolio</h2>
-      <p>Diseño de medios interactivos, UX/UI, branding y más.</p>
+    <section className="home">
+      <img src={textureLeft} alt="Decoración izquierda" className="home-texture left" />
+      
+      <div className="home-center">
+        <img
+          src={logoWhite}
+          alt="Logo central"
+          className="home-logo"
+        />
+      </div>
+
+      <img src={textureRight} alt="Decoración derecha" className="home-texture right" />
     </section>
   );
-}
+};
+
+export default Home;
