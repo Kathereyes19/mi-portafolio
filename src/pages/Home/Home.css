@@ -1,4 +1,6 @@
+
 .home {
+  font-family: "Mont";  
   width: 100%;
   display: flex;
   align-items: center;
@@ -8,7 +10,6 @@
   overflow: hidden;
 }
 
-/* Centrado vertical y horizontal */
 .home-center {
   flex: 1;
   display: flex;
@@ -16,24 +17,40 @@
   align-items: center;
 }
 
-/* Logo mucho más grande */
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Logo */
 .home-logo {
-  width: 520px; /* Fijo en escritorio */
+  width: 700px; /* Tamaño fijo en escritorio */
   height: auto;
   z-index: 2;
 }
 
-/* Texturas laterales */
+/* Subtítulo */
+.home-subtitle {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #ffffff; /* Blanco para contrastar */
+  max-width: 800px;
+}
+
+/* Texturas */
 .home-texture {
-  position: relative; /* Participa en el flujo */
+  position: relative;
   height: 100%;
   max-height: 100%;
-  opacity: 1; /* Sin transparencia */
+  opacity: 1;
   pointer-events: none;
 }
 
 .home-texture.left {
-  order: -1; /* Primero en el flex */
+  order: -1;
 }
 
 .home-texture.right {
@@ -43,7 +60,11 @@
 /* Responsive */
 @media (max-width: 1024px) {
   .home-logo {
-    max-width: 420px;
+    width: 420px;
+  }
+  
+  .home-subtitle {
+    font-size: 1.2rem;
   }
 }
 
@@ -55,7 +76,12 @@
   }
   
   .home-logo {
-    max-width: 280px;
+    width: 280px;
+  }
+
+  .home-subtitle {
+    font-size: 1rem;
+    padding: 0 1rem;
   }
 
   .home-texture {

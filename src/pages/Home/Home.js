@@ -2,7 +2,7 @@ import React from 'react';
 import './Home.css';
 
 // Logo único (blanco para fondo oscuro y claro)
-import logoWhite from '../../assets/img/logo-darkII.png';
+import logoWhite from '../../assets/img/logo-banner.png';
 
 // Texturas laterales
 import textureLeft from '../../assets/img/texture.png';
@@ -14,11 +14,16 @@ const Home = () => {
       <img src={textureLeft} alt="Decoración izquierda" className="home-texture left" />
       
       <div className="home-center">
-        <img
-          src={logoWhite}
-          alt="Logo central"
-          className="home-logo"
-        />
+        <div className="home-content">
+          <img
+            src={logoWhite}
+            alt="Logo central"
+            className="home-logo"
+          />
+          <p className="home-subtitle">
+            Diseñadora de medios interactivos | Comunicadora con enfoque digital
+          </p>
+        </div>
       </div>
 
       <img src={textureRight} alt="Decoración derecha" className="home-texture right" />
