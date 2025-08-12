@@ -1,0 +1,15 @@
+{
+  "header": {
+    "home": "Home",
+    "about": "About me",
+    "experience": "Experience",
+    "projects": "Projects",
+    "brands": "Brands",
+    "contact": "Contact",
+    "language": "Language"
+  },
+  "home": {
+    "title": "Welcome to my portfolio",
+    "subtitle": "Interactive media design, UX/UI, branding and more."
+  }
+}

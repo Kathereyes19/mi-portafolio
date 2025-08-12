@@ -1,0 +1,15 @@
+{
+  "header": {
+    "home": "Inicio",
+    "about": "Acerca de mí",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "brands": "Marcas",
+    "contact": "Contacto",
+    "language": "Idioma"
+  },
+  "home": {
+    "title": "Bienvenido a mi portafolio",
+    "subtitle": "Diseño de medios interactivos, UX/UI, branding y más."
+  }
+}

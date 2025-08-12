@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Poppins;
+  background: #fff;
+  color: #333;
+}
+
+header, section, footer {
+  padding: 2rem;
+}
+
+header.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #222;
+  color: white;
+}
+
+header.site-header a {
+  color: white;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+
+footer.site-footer {
+  background: #222;
+  color: white;
+  text-align: center;
+}
