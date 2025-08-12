@@ -1,0 +1,106 @@
+/* ===== Tipografía Mont ===== */
+@font-face {
+  font-family: 'Mont';
+  src: url('../../assets/fonts/Mont-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Mont';
+  src: url('../../assets/fonts/Mont-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+/* ===== HEADER ===== */
+.site-header {
+  background-color: var(--header-bg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2.5rem; /* más alto y ancho */
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: 'Mont', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  height: 3rem; /* antes 2.5rem (~48px ahora) */
+}
+
+.site-name {
+  font-weight: 700;
+  font-size: 1.8rem; /* antes 1.5rem (~29px) */
+  color: var(--header-text);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem; /* más espacio entre enlaces */
+}
+
+.nav-links a {
+  color: var(--header-text);
+  text-decoration: none;
+  font-size: 1.25rem; /* antes 1.1rem (~20px) */
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--color-secondary);
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* ===== SWITCHES ===== */
+.switch {
+  width: 4rem; /* antes 3.5rem */
+  height: 2.2rem; /* antes 1.8rem */
+  background-color: var(--color-secondary);
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 0.25rem;
+  transition: background-color 0.3s ease;
+}
+
+.switch:hover {
+  background-color: #7a0353;
+}
+
+.slider {
+  background-color: var(--color-white);
+  color: var(--color-secondary);
+  width: 1.8rem; /* antes 1.4rem */
+  height: 1.8rem; /* antes 1.4rem */
+  border-radius: 50%;
+  font-size: 0.9rem; /* antes 0.75rem */
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Posiciones del slider */
+.slider.left {
+  transform: translateX(0);
+}
+
+.slider.right {
+  transform: translateX(1.8rem); /* ajustado al nuevo tamaño */
+}

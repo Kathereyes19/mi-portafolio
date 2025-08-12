@@ -1,35 +1,41 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+:root {
+  --color-primary: #020151; /* azul oscuro */
+  --color-secondary: #940466; /* morado */
+  --color-white: #ffffff;
+  --color-black: #000000;
 }
 
-body {
-  font-family: Poppins;
-  background: #fff;
-  color: #333;
+@font-face {
+  font-family: 'Mont';
+  src: url('../assets/fonts/Mont-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Mont';
+  src: url('../assets/fonts/Mont-Bold.ttf') format('truetype');
+  font-weight: 700;
 }
 
-header, section, footer {
-  padding: 2rem;
+/* Tema claro */
+.light {
+  --bg-color: var(--color-white);
+  --text-color: var(--color-black);
+  --header-bg: var(--color-white);
+  --header-text: var(--color-primary);
 }
 
-header.site-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #222;
-  color: white;
+/* Tema oscuro */
+.dark {
+  --bg-color: var(--color-black);
+  --text-color: var(--color-white);
+  --header-bg: var(--color-primary);
+  --header-text: var(--color-white);
 }
 
-header.site-header a {
-  color: white;
-  margin: 0 0.5rem;
-  text-decoration: none;
-}
-
-footer.site-footer {
-  background: #222;
-  color: white;
-  text-align: center;
+/* Aplicar variables generales */
+body, .light, .dark {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
