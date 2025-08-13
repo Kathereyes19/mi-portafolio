@@ -55,12 +55,16 @@
 
 /* Móvil muy pequeño → 3 columnas */
 @media (max-width: 480px) {
+    .focus-section {
+  padding: 1rem 1rem
+}
+
   .focus-container {
     grid-template-columns: repeat(3, 1fr);
   }
 
   .focus-card {
     font-size: 0.85rem; /* texto aún más pequeño */
-    height: 40px; /* altura aún menor para pantallas muy pequeñas */
+    height: 20px; /* altura aún menor para pantallas muy pequeñas */
   }
 }

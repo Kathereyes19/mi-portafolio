@@ -10,13 +10,13 @@
   font-weight: 700;
 }
 
-/* ===== HEADER ===== */
+/* ===== HEADER GENERAL ===== */
 .site-header {
   background-color: var(--header-bg);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2.5rem; /* más alto y ancho */
+  padding: 1rem 2.5rem;
   border-bottom: 1px solid #eee;
   position: sticky;
   top: 0;
@@ -32,30 +32,31 @@
 }
 
 .logo {
-  height: 3rem; /* antes 2.5rem (~48px ahora) */
+  height: 3rem;
 }
 
 .site-name {
   font-weight: 700;
-  font-size: 1.8rem; /* antes 1.5rem (~29px) */
+  font-size: 1.8rem;
   color: var(--header-text);
 }
 
-.nav-links {
+/* ===== MENÚ ESCRITORIO ===== */
+.desktop-menu {
   display: flex;
   align-items: center;
-  gap: 2rem; /* más espacio entre enlaces */
+  gap: 2rem;
 }
 
-.nav-links a {
+.desktop-menu a {
   color: var(--header-text);
   text-decoration: none;
-  font-size: 1.25rem; /* antes 1.1rem (~20px) */
+  font-size: 1.25rem;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
-.nav-links a:hover {
+.desktop-menu a:hover {
   color: var(--color-secondary);
 }
 
@@ -67,8 +68,8 @@
 
 /* ===== SWITCHES ===== */
 .switch {
-  width: 4rem; /* antes 3.5rem */
-  height: 2.2rem; /* antes 1.8rem */
+  width: 4rem;
+  height: 2.2rem;
   background-color: var(--color-secondary);
   border-radius: 999px;
   display: flex;
@@ -85,10 +86,10 @@
 .slider {
   background-color: var(--color-white);
   color: var(--color-secondary);
-  width: 1.8rem; /* antes 1.4rem */
-  height: 1.8rem; /* antes 1.4rem */
+  width: 1.8rem;
+  height: 1.8rem;
   border-radius: 50%;
-  font-size: 0.9rem; /* antes 0.75rem */
+  font-size: 0.9rem;
   font-weight: 600;
   display: flex;
   align-items: center;
@@ -96,11 +97,107 @@
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-/* Posiciones del slider */
 .slider.left {
   transform: translateX(0);
 }
 
 .slider.right {
-  transform: translateX(1.8rem); /* ajustado al nuevo tamaño */
+  transform: translateX(1.8rem);
+}
+
+/* ===== MENÚ MÓVIL ===== */
+.mobile-menu,
+.mobile-menu a,
+.mobile-controls {
+  font-family: 'Mont', sans-serif;
+}
+
+.menu-toggle {
+  font-family: 'Mont';
+  display: none; /* Solo visible en móvil */
+  flex-direction: column;
+  gap: 0.3rem;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background-color: var(--header-text);
+  border-radius: 2px;
+}
+
+/* Overlay al abrir menú */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0,0,0,0.4);
+  backdrop-filter: blur(2px);
+  z-index: 999;
+}
+
+/* Menú lateral móvil */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 260px;
+  height: 100%;
+  background-color: var(--header-bg);
+  box-shadow: -2px 0px 8px rgba(0,0,0,0.2);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: right 0.3s ease;
+  z-index: 1000;
+}
+
+.mobile-menu.active {
+  right: 0;
+}
+
+.mobile-menu a {
+  color: var(--header-text);
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.mobile-menu a:hover {
+  color: var(--color-secondary);
+}
+
+/* Botón cerrar menú */
+.close-btn {
+  align-self: flex-end;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: var(--header-text);
+  cursor: pointer;
+}
+
+/* Controles dentro del menú móvil */
+.mobile-controls {
+  margin-top: 1rem; /* Espacio justo debajo de la última opción */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .desktop-menu {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .site-name {
+    font-size: 1.2rem; /* Nombre más pequeño en móvil */
+  }
 }

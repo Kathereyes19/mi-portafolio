@@ -1,0 +1,142 @@
+/* ===== SECCIÓN ABOUT ===== */
+.about {
+  padding: 4rem 0.5rem;
+  background-color: var(--color-white);
+  font-family: 'Mont', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Tema oscuro */
+.about.dark {
+  background-color: #020151;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-title {
+  color: #940466;
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 1.3rem;
+  transition: color 0.3s ease;
+}
+
+/* Título en modo oscuro */
+.about.dark .about-title {
+  color: #ffffff;
+}
+
+.about-description {
+  color: #020151;
+  font-size: 1.5rem;
+  line-height: 1.8;
+  transition: color 0.3s ease;
+}
+
+/* Descripción en modo oscuro */
+.about.dark .about-description {
+  color: #ffffff;
+}
+
+/* Imagen */
+.about-image {
+  flex: 0.5;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image img {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* ===== BOTONES ===== */
+.about-buttons {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}
+
+.btn {
+  background-color: #940466;
+  color: #ffffff;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #7a0353;
+  transform: translateY(-3px);
+}
+
+/* Botón modo oscuro */
+.about.dark .btn {
+  background-color: #ffffff;
+  color: #940466;
+  border: 2px solid #940466;
+}
+
+.about.dark .btn:hover {
+  background-color: #f1f1f1;
+  transform: translateY(-3px);
+}
+
+/* Iconos dentro de los botones */
+.btn-icon {
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .about {
+    padding: 1rem 0.5rem;
+  }
+
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .about-title {
+    font-size: 2.3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .about-description {
+    font-size: 1rem;
+    margin: 0 1rem;
+  }
+
+  .about-image img {
+    max-width: 250px;
+  }
+
+  .about-buttons {
+    justify-content: center;
+  }
+}
