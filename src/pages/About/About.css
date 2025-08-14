@@ -42,7 +42,7 @@
 }
 
 .about.dark .about-title {
-  color: #ffffff; /* En modo oscuro el título es blanco */
+  color: #e7e6e6; /* En modo oscuro el título es blanco */
 }
 
 .about-description {
@@ -52,7 +52,7 @@
 }
 
 .about.dark .about-description {
-  color: #ffffff; /* Texto blanco en modo oscuro */
+  color: #e7e6e6; /* Texto blanco en modo oscuro */
 }
 
 .about-image {
@@ -83,7 +83,7 @@
 }
 
 .about.dark .read-more-btn {
-  color: #ffffff;
+  color: #e7e6e6;
 }
 
 .read-more-btn:hover {
@@ -105,7 +105,7 @@
   gap: 0.5rem;
   padding: 0.75rem 1.5rem;
   background-color: #940466;
-  color: #ffffff;
+  color: #e7e6e6;
   border: none;
   border-radius: 50px;
   font-size: 1rem;
@@ -125,12 +125,12 @@
 
 /* Modo oscuro - Botones */
 .about.dark .btn {
-  background-color: #ffffff;
+  background-color: #e7e6e6;
   color: #940466;
 }
 
 .about.dark .btn:hover {
-  background-color: #e6e6e6;
+  background-color: #c7c7c7;
 }
 
 /* ===== RESPONSIVE ===== */
