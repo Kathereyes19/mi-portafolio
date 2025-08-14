@@ -13,7 +13,7 @@
   },
   "focus": {
     "uxui": "Diseño UX/UI",
-    "branding": "Branding",
+    "branding": "Diseño de marca",
     "identity": "Identidad Visual",
     "multimedia": "Producción Multimedia",
     "strategy": "Estrategia de marca",
@@ -21,6 +21,9 @@
   },
   "about": {
     "title": "Acerca de mí",
-    "description": "Soy Katherine Reyes, estudiante de Diseño de Medios Interactivos (10º semestre) y Comunicación con enfoque digital (8º semestre) en la Universidad Icesi, apasionada por el diseño gráfico, la creación de contenido visual y la gestión de proyectos digitales. A lo largo de mi formación he adquirido experiencia en diseño UX/UI, producción multimedia, gestión de redes sociales y coordinación de proyectos, participando tanto en entornos académicos como en iniciativas freelance. Mi enfoque combina estética y funcionalidad para desarrollar soluciones visuales innovadoras que comuniquen de forma efectiva. Me considero una persona creativa, organizada y proactiva, con habilidades técnicas en herramientas como Adobe Creative Suite y Figma, así como en la creación de contenido para redes sociales y la ejecución de estrategias digitales."
+    "description": "Soy Katherine Reyes, estudiante de Diseño de Medios Interactivos (10º semestre) y Comunicación con enfoque digital (8º semestre) en la Universidad Icesi, apasionada por el diseño gráfico, la creación de contenido visual y la gestión de proyectos digitales. A lo largo de mi formación he adquirido experiencia en diseño UX/UI, producción multimedia, gestión de redes sociales y coordinación de proyectos, participando tanto en entornos académicos como en iniciativas freelance. Mi enfoque combina estética y funcionalidad para desarrollar soluciones visuales innovadoras que comuniquen de forma efectiva. Me considero una persona creativa, organizada y proactiva, con habilidades técnicas en herramientas como Adobe Creative Suite y Figma, así como en la creación de contenido para redes sociales y la ejecución de estrategias digitales.",
+    "cv": "Descargar CV",
+    "readMore": "Leer más",
+    "readLess": "Leer menos"
   }
 }

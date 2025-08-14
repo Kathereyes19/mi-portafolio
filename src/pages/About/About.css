@@ -1,14 +1,24 @@
+/* ===== Tipografía Mont ===== */
+@font-face {
+  font-family: 'Mont';
+  src: url('../../assets/fonts/Mont-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Mont';
+  src: url('../../assets/fonts/Mont-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
 /* ===== SECCIÓN ABOUT ===== */
 .about {
   padding: 4rem 0.5rem;
   background-color: var(--color-white);
   font-family: 'Mont', sans-serif;
-  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Tema oscuro */
 .about.dark {
-  background-color: #020151;
+  background-color: #020151; /* Azul oscuro */
 }
 
 .about-content {
@@ -25,31 +35,26 @@
 }
 
 .about-title {
-  color: #940466;
+  color: #940466; /* Morado */
   font-size: 4rem;
   font-weight: 700;
   margin-bottom: 1.3rem;
-  transition: color 0.3s ease;
 }
 
-/* Título en modo oscuro */
 .about.dark .about-title {
-  color: #ffffff;
+  color: #ffffff; /* En modo oscuro el título es blanco */
 }
 
 .about-description {
-  color: #020151;
+  color: #020151; /* Azul */
   font-size: 1.5rem;
   line-height: 1.8;
-  transition: color 0.3s ease;
 }
 
-/* Descripción en modo oscuro */
 .about.dark .about-description {
-  color: #ffffff;
+  color: #ffffff; /* Texto blanco en modo oscuro */
 }
 
-/* Imagen */
 .about-image {
   flex: 0.5;
   display: flex;
@@ -63,51 +68,69 @@
   object-fit: cover;
 }
 
-/* ===== BOTONES ===== */
+/* ===== BOTÓN LEER MÁS ===== */
+.read-more-btn {
+  display: none; /* Oculto por defecto (en PC no se ve) */
+  margin-top: 0.3rem;
+  background: none;
+  border: none;
+  color: #940466;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.about.dark .read-more-btn {
+  color: #ffffff;
+}
+
+.read-more-btn:hover {
+  color: #7a0353;
+}
+
+/* ===== BOTONES PRINCIPALES ===== */
 .about-buttons {
-  margin-top: 2rem;
   display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
   flex-wrap: wrap;
-  gap: 1.2rem;
 }
 
 .btn {
-  background-color: #940466;
-  color: #ffffff;
-  padding: 1rem 2rem;
-  font-size: 1.1rem;
-  font-weight: 600;
-  border-radius: 50px;
-  border: 2px solid transparent;
-  cursor: pointer;
   display: inline-flex;
   align-items: center;
-  gap: 0.8rem;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #940466;
+  color: #ffffff;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
   text-decoration: none;
   transition: all 0.3s ease;
 }
 
-.btn:hover {
-  background-color: #7a0353;
-  transform: translateY(-3px);
+.btn-icon {
+  font-size: 1.2rem;
 }
 
-/* Botón modo oscuro */
+.btn:hover {
+  background-color: #7a0353;
+}
+
+/* Modo oscuro - Botones */
 .about.dark .btn {
   background-color: #ffffff;
   color: #940466;
-  border: 2px solid #940466;
 }
 
 .about.dark .btn:hover {
-  background-color: #f1f1f1;
-  transform: translateY(-3px);
-}
-
-/* Iconos dentro de los botones */
-.btn-icon {
-  font-size: 1.4rem;
-  flex-shrink: 0;
+  background-color: #e6e6e6;
 }
 
 /* ===== RESPONSIVE ===== */
@@ -127,9 +150,24 @@
     margin-bottom: 0.5rem;
   }
 
+  /* Texto recortado SOLO en móvil */
   .about-description {
-    font-size: 1rem;
-    margin: 0 1rem;
+    font-size: 0.9rem;
+    margin: 1rem 2rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Muestra 3 líneas */
+    -webkit-box-orient: vertical;
+  }
+
+  /* Cuando esté expandido */
+  .about-description.expanded {
+    -webkit-line-clamp: unset;
+  }
+
+  /* Botón solo visible en móvil */
+  .read-more-btn {
+    display: inline-block;
   }
 
   .about-image img {
@@ -138,5 +176,16 @@
 
   .about-buttons {
     justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 1rem;
+  }
+
+  .about-buttons .btn {
+    flex: 1 1 calc(33.33% - 1rem);
+    min-width: 100px;
+    max-width: 150px;
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem;
   }
 }
