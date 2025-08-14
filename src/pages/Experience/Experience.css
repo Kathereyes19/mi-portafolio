@@ -1,0 +1,118 @@
+/* ===== Tipografía Mont ===== */
+@font-face {
+  font-family: 'Mont';
+  src: url('../../assets/fonts/Mont-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: url('../../assets/fonts/Mont-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+ 
+/* ===== SECCIÓN EXPERIENCE ===== */
+.experience-section {
+  padding: 2rem 9rem;
+  font-family: 'Mont', sans-serif;
+}
+
+.experience-title {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  color: #940466; /* morado en modo claro */
+  font-weight: 700;
+    font-family: 'Mont', sans-serif;
+
+}
+
+.experience-title.dark {
+  color: #ffffff;
+}
+
+/* Cambiamos container a multicolumn layout */
+.experience-container {
+  column-count: 2; /* dos columnas en desktop */
+  column-gap: 15rem; /* espacio entre columnas */
+}
+
+.experience-item {
+  position: relative;
+  padding: 1rem 0;
+  break-inside: avoid; /* evita que el item se divida entre columnas */
+}
+
+/* Puntito al inicio de cada experiencia */
+.experience-item::before {
+  content: '';
+  position: absolute;
+  left: -2rem;
+  top: 1.7rem;
+  width: 15px;
+  height: 15px;
+  background-color: #940466;
+  border-radius: 50%;
+}
+
+/* Rol en negrita */
+.experience-role {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin: 0.2rem 0;
+  color: #020151; /* azul en modo claro */
+  font-family: 'Mont', sans-serif;
+}
+
+.experience-company,
+.experience-period {
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin: 0.2rem 0;
+  color: #020151;
+  font-family: 'Mont', sans-serif;
+
+}
+
+/* Modo oscuro */
+.experience-role.dark,
+.experience-company.dark,
+.experience-period.dark {
+  color: #ffffff;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .experience-section {
+    padding: 2rem 3rem;
+  }
+
+  .experience-title {
+    font-size: 2.3rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .experience-container {
+    column-count: 1; /* una sola columna en móvil */
+    column-gap: 0;
+  }
+
+  .experience-item::before {
+    left: -1rem;
+    top: 1.5rem;
+    width: 8px;
+    height: 8px;
+  }
+
+  .experience-role {
+    font-size: 0.9rem;
+  }
+
+  .experience-company,
+  .experience-period {
+    font-size: 0.9rem;
+  }
+}

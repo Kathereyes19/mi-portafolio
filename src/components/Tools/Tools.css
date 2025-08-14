@@ -1,0 +1,41 @@
+.tools-section {
+  overflow: hidden;
+  width: 100%;
+  background-color: var(--bg-section);
+  padding: 0;
+}
+
+.tools-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 20s linear infinite;
+}
+
+.tools-img {
+  flex-shrink: 0;
+  height: 100px; /* ajusta según necesites */
+  margin-right: 2rem; /* separación opcional */
+}
+
+/* Animación horizontal continua */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .tools-img {
+    height: 55px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tools-img {
+    height: 45px;
+  }
+}

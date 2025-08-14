@@ -25,5 +25,48 @@
     "cv": "Descargar CV",
     "readMore": "Leer más",
     "readLess": "Leer menos"
-  }
+  },
+  "experience": "Experiencia",
+  "experiences": [
+    {
+      "role": "Diseñadora JR",
+      "company": "Puck Digital Agency - Atlanta",
+      "period": "Abril 2025 - Actualmente"
+    },
+    {
+      "role": "Diseñadora Gráfica y Multimedia",
+      "company": "Centro Eduteka, Universidad Icesi",
+      "period": "Marzo 2024 - Mayo 2025"
+    },
+    {
+      "role": "Community Manager",
+      "company": "Programa de Comunicación, Universidad Icesi",
+      "period": "Agosto 2023 - Diciembre 2024"
+    },
+    {
+      "role": "Publicista",
+      "company": "Vonnacher Taekwondo (México) - Proyecto académico",
+      "period": "Enero 2025 - Mayo 2025"
+    },
+    {
+      "role": "Comunicadora organizacional",
+      "company": "Seven Roses (México) - Proyecto académico",
+      "period": "Enero 2025 - Mayo 2025"
+    },
+    {
+      "role": "Diseñadora UX - UI",
+      "company": "Bancoldex - Proyecto académico",
+      "period": "Agosto - Noviembre 2024"
+    },
+    {
+      "role": "Diseñadora UX - UI",
+      "company": "Mercadeo Icesi - Proyecto académico",
+      "period": "Agosto - Noviembre 2022"
+    },
+    {
+      "role": "Tutora académica",
+      "company": "Universidad Icesi",
+      "period": "Agosto 2022 - Junio 2025"
+    }
+  ]
 }

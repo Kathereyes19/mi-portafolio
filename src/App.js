@@ -9,6 +9,7 @@ import Footer from './components/Footer/Footer';
 import Home from './pages/Home/Home';
 import Focus from './components/Focus/Focus';
 import About from './pages/About/About';
+import Tools from './components/Tools/Tools';
 import Experience from './pages/Experience/Experience';
 import Projects from './pages/Projects/Projects';
 import Brands from './pages/Brands/Brands';
@@ -22,6 +23,7 @@ function App() {
         <Home />
         <Focus />
         <About />
+        <Tools />
         <Experience />
         <Projects />
         <Brands />

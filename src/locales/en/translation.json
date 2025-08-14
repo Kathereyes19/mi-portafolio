@@ -26,6 +26,50 @@
     "cv": "Download CV",
     "readMore": "Read more",
     "readLess": "Read less"
-  }
+  },
+  "experience": "Experience",
+  "experiences": [
+    {
+      "role": "Junior Designer",
+      "company": "Puck Digital Agency - Atlanta",
+      "period": "April 2025 - Present"
+    },
+    {
+      "role": "Graphic and Multimedia Designer",
+      "company": "Educateka Center, Icesi University",
+      "period": "March 2024 - May 2025"
+    },
+    {
+      "role": "Community Manager",
+      "company": "Communication Program, Icesi University",
+      "period": "August 2023 - December 2024"
+    },
+    {
+      "role": "Publicist",
+      "company": "Vonnacher Taekwondo (Mexico) - Academic Project",
+      "period": "January 2025 - May 2025"
+    },
+    {
+      "role": "Organizational Communicator",
+      "company": "Seven Roses (Mexico) - Academic Project",
+      "period": "January 2025 - May 2025"
+    },
+    {
+      "role": "UX - UI Designer",
+      "company": "Bancoldex - Academic Project",
+      "period": "August - November 2024"
+    },
+    {
+      "role": "UX - UI Designer",
+      "company": "Icesi Marketing - Academic Project",
+      "period": "August - November 2022"
+    },
+    {
+      "role": "Academic Tutor",
+      "company": "Icesi University",
+      "period": "August 2022 - June 2025"
+    }
+  ]
 }
+
 
