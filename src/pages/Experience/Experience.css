@@ -15,13 +15,13 @@
  
 /* ===== SECCIÓN EXPERIENCE ===== */
 .experience-section {
-  padding: 2rem 9rem;
+  padding: 2rem 10rem;
   font-family: 'Mont', sans-serif;
 }
 
 .experience-title {
   font-size: 4rem;
-  margin: 2rem;
+  margin: 0rem;
   color: #940466; /* morado en modo claro */
   font-weight: 700;
     font-family: 'Mont', sans-serif;
@@ -40,7 +40,7 @@
 
 .experience-item {
   position: relative;
-  padding: 1rem 0;
+  padding: 1rem 2rem;
   break-inside: avoid; /* evita que el item se divida entre columnas */
 }
 
@@ -48,7 +48,7 @@
 .experience-item::before {
   content: '';
   position: absolute;
-  left: -2rem;
+  left: 0.2rem;
   top: 1.7rem;
   width: 15px;
   height: 15px;
@@ -99,6 +99,10 @@
     column-count: 1; /* una sola columna en móvil */
     column-gap: 0;
   }
+  
+  .experience-item {
+  padding: 1rem 0.5rem;
+}
 
   .experience-item::before {
     left: -1rem;

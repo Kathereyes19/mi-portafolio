@@ -1,80 +1,78 @@
-import React, { useEffect, useState } from 'react';
-import './Projects.css';
-import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
-
-const API_KEY = "TU_API_KEY_AQUI"; // 🚨 Reemplaza con tu API Key
-const USERNAME = "katherinereyes119"; // 🚨 Reemplaza con tu username Behance
+import React, { useRef } from "react";
+import "./Projects.css";
+import { useTranslation } from "react-i18next";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useTheme } from "../../context/ThemeContext";
 
 const Projects = () => {
-  const [projects, setProjects] = useState([]);
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const { t } = useTranslation();
+  const carouselRef = useRef(null);
+  const { theme } = useTheme(); // 👈 leemos el tema actual desde el contexto
 
-  useEffect(() => {
-    const fetchProjects = async () => {
-      try {
-        const res = await fetch(
-          `https://api.behance.net/v2/users/${USERNAME}/projects?client_id=${API_KEY}`
-        );
-        const data = await res.json();
-        setProjects(data.projects || []);
-      } catch (error) {
-        console.error("Error cargando proyectos:", error);
-      }
-    };
+  const projects = t("projects.items", { returnObjects: true });
 
-    fetchProjects();
-  }, []);
-
-  // Funciones de navegación
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === projects.length - 1 ? 0 : prevIndex + 1
-    );
-  };
-
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? projects.length - 1 : prevIndex - 1
-    );
+  const scroll = (direction) => {
+    const { current } = carouselRef;
+    if (!current) return;
+    const cardWidth = current.querySelector(".project-card").offsetWidth + 16;
+    current.scrollBy({
+      left: direction === "left" ? -cardWidth : cardWidth,
+      behavior: "smooth",
+    });
   };
 
   return (
-    <section className="projects-section" id="projects">
-      <h2 className="projects-title">Mis Proyectos</h2>
+    <section
+      className={`projects-section ${theme === "dark" ? "dark" : "light"}`}
+      id="projects"
+    >
+      <h2 className="projects-title">{t("projects.title")}</h2>
 
-      <div className="projects-carousel">
-        {projects.length > 0 ? (
-          projects.slice(currentIndex, currentIndex + 4).map((project) => (
-            <div className="project-card" key={project.id}>
-              <img
-                src={project.covers?.original || project.covers[404]}
-                alt={project.name}
-                className="project-img"
-              />
-              <h3 className="project-title">{project.name}</h3>
-              <p className="project-description">{project.fields?.join(", ")}</p>
-              <a
-                href={project.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="project-btn"
-              >
-                Ver más
-              </a>
-            </div>
-          ))
-        ) : (
-          <p className="loading">Cargando proyectos...</p>
-        )}
-      </div>
+      <div className="projects-wrapper">
+        <div className="projects-carousel" ref={carouselRef}>
+          {projects.map((project, index) => {
+            let imageSrc;
+            try {
+              // 👇 importa dinámicamente desde assets/projects
+              imageSrc = require(`../../assets/projects/${project.image}`);
+            } catch (error) {
+              console.error("Error cargando imagen:", project.image, error);
+              imageSrc = ""; // fallback vacío si falla
+            }
 
-      <div className="carousel-buttons">
-        <button onClick={prevSlide} className="carousel-btn">
-          <FaArrowLeft />
-        </button>
-        <button onClick={nextSlide} className="carousel-btn">
-          <FaArrowRight />
-        </button>
+            return (
+              <div className="project-card" key={index}>
+                <img
+                  src={imageSrc}
+                  alt={project.title}
+                  className="project-img"
+                />
+                <div className="project-info">
+                  <h3 className="project-title">{project.title}</h3>
+                  <p className="project-description">{project.description}</p>
+                  <a
+                    href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project-btn"
+                  >
+                    {t("projects.viewMore")}
+                  </a>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* Flechas solo en desktop */}
+        <div className="carousel-controls">
+          <button className="arrow-btn left" onClick={() => scroll("left")}>
+            <ChevronLeft size={24} />
+          </button>
+          <button className="arrow-btn right" onClick={() => scroll("right")}>
+            <ChevronRight size={24} />
+          </button>
+        </div>
       </div>
     </section>
   );

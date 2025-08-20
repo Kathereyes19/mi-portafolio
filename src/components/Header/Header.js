@@ -32,7 +32,6 @@ const Header = () => {
           <a href="#about">{t('header.about')}</a>
           <a href="#experience">{t('header.experience')}</a>
           <a href="#projects">{t('header.projects')}</a>
-          <a href="#brands">{t('header.brands')}</a>
           <a href="#contact">{t('header.contact')}</a>
 
           <div className="controls">

@@ -14,7 +14,6 @@ import Experience from './pages/Experience/Experience';
 import Companies from './components/Companies/Companies';
 import Education from './pages/Education/Education';
 import Projects from './pages/Projects/Projects';
-import Brands from './pages/Brands/Brands';
 import Contact from './pages/Contact/Contact';
 
 function App() {
@@ -30,7 +29,6 @@ function App() {
         <Education />
         <Tools />
         <Projects />
-        <Brands />
         <Contact />
       </main>
       <Footer />

@@ -1,6 +1,6 @@
 /* ============ BASE ============ */
 .education-section {
-  padding: 5rem 7rem;
+  padding: 5rem 10rem;
   font-family: 'Mont';
   background-color: #f7f7f7ff; /* Light */
   color: #020151;            /* Texto azul en Light */
@@ -11,7 +11,7 @@
   color: #940466;
   font-size: 4rem;
   font-weight: 700;
-  margin: 1rem;
+  margin: 0rem;
 }
 
 /* Dark Mode */
@@ -48,7 +48,7 @@
 
 .edu-item {
   position: relative;
-  padding: 0.1rem 1.8rem; /* espacio para el puntito */
+  padding: 0.1rem 2rem; /* espacio para el puntito */
 }
 
 /* Puntito estilo Experiencia */
@@ -170,8 +170,8 @@
   }
 
   .education-section.dark .accordion-btn {
-    background: #f7f7f7;
-    color: #940466;
+    background: rgb(43, 43, 114);
+    color: #ffffff;
   }
 
   .accordion-content {
@@ -190,7 +190,7 @@
   }
 
   .education-section.dark .accordion-content {
-    background: #020151;
+    background: rgb(43, 43, 114);
     color: #ffffff;
   }
 
