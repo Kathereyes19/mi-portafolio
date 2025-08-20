@@ -107,10 +107,6 @@
 }
 
 /* ============ MOBILE ============ */
-.education-section {
-  padding: 2rem 2rem;
-}
-
 .edu-mobile {
   display: none;
 }
@@ -125,6 +121,10 @@
     max-width: 720px;
     margin: 0 auto;
   }
+  .education-section {
+  padding: 0rem 2rem;
+  margin-top: 2rem;
+}
 
   /* Imagen fija arriba */
   .edu-mobile-img {
@@ -185,7 +185,7 @@
   }
 
   .accordion-content.open {
-    padding: 0.8rem 1rem 1rem 1rem;
+    padding: 0rem 1rem 1rem 1rem;
     max-height: 900px;
   }
 
