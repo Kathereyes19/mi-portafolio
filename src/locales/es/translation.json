@@ -68,5 +68,45 @@
       "company": "Universidad Icesi",
       "period": "Agosto 2022 - Junio 2025"
     }
-  ]
+  ],
+  "education": {
+    "title": "Educación",
+    "items": [
+      {
+        "career": "Diseño de Medios Interactivos",
+        "university": "Universidad Icesi - Cali, Colombia",
+        "detail": "10º semestre"
+      },
+      {
+        "career": "Comunicación con Enfoque Digital",
+        "university": "Universidad Icesi - Cali, Colombia",
+        "detail": "8º semestre"
+      },
+      {
+        "career": "Semestre Internacional",
+        "university": "Universidad de Monterrey - México",
+        "detail": "Enero - Mayo 2025"
+      }
+    ]
+  },
+  "certifications": {
+    "title": "Cursos y Certificaciones",
+    "items": [
+      {
+        "career": "Storytelling en el Marketing Digital",
+        "university": "Banco Santander | Open Academy",
+        "detail": "Marzo 2025"
+      },
+      {
+        "career": "Curso de escritura, redacción y gramática práctica",
+        "university": "Universidad Icesi - Cali",
+        "detail": "Agosto 2024"
+      },
+      {
+        "career": "Pasaporte de Figma Avanzado",
+        "university": "Universidad Icesi - Cali",
+        "detail": "Noviembre 2023"
+      }
+    ]
+  }
 }

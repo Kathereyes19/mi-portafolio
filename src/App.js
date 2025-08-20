@@ -11,6 +11,8 @@ import Focus from './components/Focus/Focus';
 import About from './pages/About/About';
 import Tools from './components/Tools/Tools';
 import Experience from './pages/Experience/Experience';
+import Companies from './components/Companies/Companies';
+import Education from './pages/Education/Education';
 import Projects from './pages/Projects/Projects';
 import Brands from './pages/Brands/Brands';
 import Contact from './pages/Contact/Contact';
@@ -23,8 +25,10 @@ function App() {
         <Home />
         <Focus />
         <About />
-        <Tools />
         <Experience />
+        <Companies />
+        <Education />
+        <Tools />
         <Projects />
         <Brands />
         <Contact />

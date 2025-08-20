@@ -1,7 +1,7 @@
 {
   "header": {
     "home": "Home",
-    "about": "About me",
+    "about": "About Me",
     "experience": "Experience",
     "projects": "Projects",
     "brands": "Brands",
@@ -18,11 +18,10 @@
     "multimedia": "Multimedia Production",
     "strategy": "Brand Strategy",
     "graphic": "Graphic Design"
-    
   },
   "about": {
-    "title": "About me",
-    "description": "I am Katherine Reyes, a 10th-semester Interactive Media Design student and 8th-semester Communication student with a digital focus at Universidad Icesi. I am passionate about graphic design, creating visual content, and managing digital projects. Throughout my education, I have gained experience in UX/UI design, multimedia production, social media management, and project coordination, participating in both academic environments and freelance initiatives. My approach combines aesthetics and functionality to develop innovative visual solutions that communicate effectively. I consider myself a creative, organized, and proactive person, with technical skills in tools such as Adobe Creative Suite and Figma, as well as in creating social media content and executing digital strategies.",
+    "title": "About Me",
+    "description": "I am Katherine Reyes, a student of Interactive Media Design (10th semester) and Communication with a Digital focus (8th semester) at Universidad Icesi, passionate about graphic design, visual content creation, and digital project management. Throughout my studies, I have gained experience in UX/UI design, multimedia production, social media management, and project coordination, participating in both academic settings and freelance initiatives. My approach combines aesthetics and functionality to develop innovative visual solutions that communicate effectively. I consider myself a creative, organized, and proactive person, with technical skills in tools such as Adobe Creative Suite and Figma, as well as content creation for social media and execution of digital strategies.",
     "cv": "Download CV",
     "readMore": "Read more",
     "readLess": "Read less"
@@ -36,16 +35,16 @@
     },
     {
       "role": "Graphic and Multimedia Designer",
-      "company": "Educateka Center, Icesi University",
+      "company": "Centro Eduteka, Universidad Icesi",
       "period": "March 2024 - May 2025"
     },
     {
       "role": "Community Manager",
-      "company": "Communication Program, Icesi University",
+      "company": "Communication Program, Universidad Icesi",
       "period": "August 2023 - December 2024"
     },
     {
-      "role": "Publicist",
+      "role": "Advertiser",
       "company": "Vonnacher Taekwondo (Mexico) - Academic Project",
       "period": "January 2025 - May 2025"
     },
@@ -61,15 +60,53 @@
     },
     {
       "role": "UX - UI Designer",
-      "company": "Icesi Marketing - Academic Project",
+      "company": "Mercadeo Icesi - Academic Project",
       "period": "August - November 2022"
     },
     {
       "role": "Academic Tutor",
-      "company": "Icesi University",
+      "company": "Universidad Icesi",
       "period": "August 2022 - June 2025"
     }
-  ]
+  ],
+  "education": {
+    "title": "Education",
+    "items": [
+      {
+        "career": "Interactive Media Design",
+        "university": "Universidad Icesi - Cali, Colombia",
+        "detail": "10th semester"
+      },
+      {
+        "career": "Communication with Digital Focus",
+        "university": "Universidad Icesi - Cali, Colombia",
+        "detail": "8th semester"
+      },
+      {
+        "career": "International Semester",
+        "university": "Universidad de Monterrey - Mexico",
+        "detail": "January - May 2025"
+      }
+    ]
+  },
+  "certifications": {
+    "title": "Courses and Certifications",
+    "items": [
+      {
+        "career": "Storytelling in Digital Marketing",
+        "university": "Banco Santander | Open Academy",
+        "detail": "March 2025"
+      },
+      {
+        "career": "Writing, Composition and Practical Grammar",
+        "university": "Universidad Icesi - Cali",
+        "detail": "August 2024"
+      },
+      {
+        "career": "Advanced Figma Passport",
+        "university": "Universidad Icesi - Cali",
+        "detail": "November 2023"
+      }
+    ]
+  }
 }
-
-

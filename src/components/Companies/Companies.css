@@ -1,0 +1,58 @@
+.companies-section {
+  background-color: var(--color-white);
+  padding: 5rem 2.5rem;
+  font-family: 'Mont', sans-serif;
+  transition: background-color 0.3s ease;
+  overflow: hidden;
+}
+
+.companies-section.dark {
+  background-color: var(--color-dark);
+}
+
+.companies-slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.companies-track {
+  display: flex;
+  width: calc(200%); /* doble para animación infinita */
+  animation: scrollLeft 25s linear infinite;
+}
+
+.companies-logo {
+  height: 100px;
+  margin: 2rem 2rem;
+  flex-shrink: 0;
+}
+
+/* Animación tipo Tools */
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .companies-logo {
+    height: 70px;
+    margin: 0 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .companies-logo {
+    height: 50px;
+    margin: 0 1rem;
+  }
+}
+
+.companies-section {
+  padding: 0.5rem 0rem;
+}

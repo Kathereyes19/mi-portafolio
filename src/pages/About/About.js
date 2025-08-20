@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 import { useTheme } from '../../context/ThemeContext';
 
 // Iconos
-import { FaDownload, FaLinkedin, FaBehance } from 'react-icons/fa';
+import { FaDownload, FaLinkedin, FaBehance, FaInstagram } from 'react-icons/fa';
 
 const About = () => {
   const { t, i18n } = useTranslation();
@@ -64,6 +64,14 @@ const About = () => {
               className="btn"
             >
               <FaBehance className="btn-icon" /> Behance
+            </a>
+            <a
+              href="https://www.instagram.com/kathereyes.studio/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn"
+            >
+              <FaInstagram className="btn-icon" /> Instagram
             </a>
           </div>
         </div>

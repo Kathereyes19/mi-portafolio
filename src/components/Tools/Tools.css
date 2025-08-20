@@ -2,7 +2,7 @@
   overflow: hidden;
   width: 100%;
   background-color: var(--bg-section);
-  padding: 0;
+  padding: 2.5rem;
 }
 
 .tools-track {
