@@ -25,9 +25,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 3rem;
-  max-width: 1600px;
+  gap: 2rem;
+  max-width: 1400px;
   margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .about-text {
@@ -36,33 +37,33 @@
 
 .about-title {
   color: #940466; /* Morado */
-  font-size: 4rem;
+  font-size: 3rem; /* ligeramente más pequeño para pantallas grandes */
   font-weight: 700;
-  margin-bottom: 1.3rem;
+  margin-bottom: 1rem;
 }
 
 .about.dark .about-title {
-  color: #e7e6e6; /* En modo oscuro el título es blanco */
+  color: #e7e6e6;
 }
 
 .about-description {
-  color: #020151; /* Azul */
-  font-size: 1.2rem;
-  line-height: 1.8;
+  color: #020151;
+  font-size: 1.1rem; /* texto más compacto */
+  line-height: 1.6;
 }
 
 .about.dark .about-description {
-  color: #e7e6e6; /* Texto blanco en modo oscuro */
+  color: #e7e6e6;
 }
 
 .about-image {
-  flex: 0.5;
+  flex: 0.4; /* ajusta para que la foto no quede tan pequeña */
   display: flex;
   justify-content: center;
 }
 
 .about-image img {
-  max-width: 500px;
+  max-width: 400px;
   width: 100%;
   border-radius: 20px;
   object-fit: cover;
@@ -70,12 +71,12 @@
 
 /* ===== BOTÓN LEER MÁS ===== */
 .read-more-btn {
-  display: none; /* Oculto por defecto (en PC no se ve) */
+  display: none;
   margin-top: 0.3rem;
   background: none;
   border: none;
   color: #940466;
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 600;
   cursor: pointer;
   text-decoration: underline;
@@ -94,8 +95,9 @@
 .about-buttons {
   display: flex;
   gap: 1rem;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .btn {
@@ -103,12 +105,12 @@
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  padding: 0.75rem 1.5rem;
+  padding: 0.65rem 1.2rem; /* más compacto */
   background-color: #940466;
   color: #e7e6e6;
   border: none;
   border-radius: 50px;
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 600;
   cursor: pointer;
   text-decoration: none;
@@ -116,14 +118,13 @@
 }
 
 .btn-icon {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .btn:hover {
   background-color: #7a0353;
 }
 
-/* Modo oscuro - Botones */
 .about.dark .btn {
   background-color: #e7e6e6;
   color: #940466;
@@ -136,42 +137,55 @@
 /* ===== RESPONSIVE ===== */
 @media (max-width: 1024px) {
   .about {
-    padding: 3rem 5rem; /* reducimos padding lateral en tablets */
+    padding: 3rem 5rem;
+  }
+
+  .about-title {
+    font-size: 2.5rem;
+  }
+
+  .about-description {
+    font-size: 1rem;
+  }
+
+  .about-image img {
+    max-width: 300px;
+  }
+
+  .about-buttons {
+    justify-content: flex-start;
   }
 }
 
 @media (max-width: 768px) {
   .about {
-    padding: 2rem 3rem; /* mismo comportamiento que Experience en móvil */
+    padding: 2rem 3rem;
   }
 
   .about-content {
     flex-direction: column;
     text-align: center;
     gap: 1.5rem;
+    padding: 0 1.5rem;
   }
 
   .about-title {
-    font-size: 2.3rem;
-    margin-bottom: 0.5rem;
+    font-size: 2.2rem;
   }
 
-  /* Texto recortado SOLO en móvil */
   .about-description {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     margin: 1rem 2rem;
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 3; /* Muestra 3 líneas */
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
   }
 
-  /* Cuando esté expandido */
   .about-description.expanded {
     -webkit-line-clamp: unset;
   }
 
-  /* Botón solo visible en móvil */
   .read-more-btn {
     display: inline-block;
   }
@@ -182,15 +196,14 @@
 
   .about-buttons {
     justify-content: center;
-    flex-direction: row;
     flex-wrap: wrap;
     margin: 1rem;
   }
 
   .about-buttons .btn {
-    flex: 1 1 calc(33.33% - 1rem);
-    min-width: 100px;
-    max-width: 150px;
+    flex: 1 1 calc(50% - 1rem);
+    min-width: 120px;
+    max-width: 180px;
     font-size: 0.85rem;
     padding: 0.5rem 1rem;
   }
