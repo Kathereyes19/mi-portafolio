@@ -12,7 +12,7 @@
 
 /* ===== SECCIÓN ABOUT ===== */
 .about {
-  padding: 4rem 2rem; /* Más espacio lateral */
+  padding: 4rem 0.5rem;
   background-color: var(--color-white);
   font-family: 'Mont', sans-serif;
 }
@@ -26,9 +26,9 @@
   align-items: center;
   justify-content: space-between;
   gap: 3rem;
-  max-width: 1200px; /* Limita el ancho máximo */
+  max-width: 1600px;
   margin: 0 auto;
-  padding: 0 1rem; /* Margen lateral extra */
+  padding: 0 2rem; /* padding lateral agregado */
 }
 
 .about-text {
@@ -43,7 +43,7 @@
 }
 
 .about.dark .about-title {
-  color: #e7e6e6; /* Blanco en modo oscuro */
+  color: #e7e6e6; /* En modo oscuro el título es blanco */
 }
 
 .about-description {
@@ -53,7 +53,7 @@
 }
 
 .about.dark .about-description {
-  color: #e7e6e6; /* Blanco en modo oscuro */
+  color: #e7e6e6; /* Texto blanco en modo oscuro */
 }
 
 .about-image {
@@ -71,7 +71,7 @@
 
 /* ===== BOTÓN LEER MÁS ===== */
 .read-more-btn {
-  display: none; /* Oculto por defecto en PC */
+  display: none; /* Oculto por defecto (en PC no se ve) */
   margin-top: 0.3rem;
   background: none;
   border: none;
@@ -135,22 +135,16 @@
 }
 
 /* ===== RESPONSIVE ===== */
-@media (max-width: 1024px) {
-  .about-content {
-    flex-direction: column;
-    text-align: center; /* Centra el texto en pantallas medianas */
-  }
-}
-
 @media (max-width: 768px) {
   .about {
-    padding: 2rem 1rem; /* Más espacio lateral en móvil */
+    padding: 1rem 0.5rem;
   }
 
   .about-content {
     flex-direction: column;
     text-align: center;
     gap: 1.5rem;
+    padding: 0 1.5rem; /* padding lateral ajustado para móvil */
   }
 
   .about-title {
@@ -158,19 +152,22 @@
     margin-bottom: 0.5rem;
   }
 
+  /* Texto recortado SOLO en móvil */
   .about-description {
     font-size: 0.9rem;
-    margin: 1rem 1rem;
+    margin: 1rem 2rem;
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 3; /* Solo 3 líneas visibles */
+    -webkit-line-clamp: 3; /* Muestra 3 líneas */
     -webkit-box-orient: vertical;
   }
 
+  /* Cuando esté expandido */
   .about-description.expanded {
     -webkit-line-clamp: unset;
   }
 
+  /* Botón solo visible en móvil */
   .read-more-btn {
     display: inline-block;
   }
