@@ -12,23 +12,23 @@
 
 /* ===== SECCIÓN ABOUT ===== */
 .about {
-  padding: 4rem 10rem; /* mismo padding lateral que Experience */
+  padding: 4rem 10rem; /* suficiente padding lateral en desktop */
   background-color: var(--color-white);
   font-family: 'Mont', sans-serif;
 }
 
 .about.dark {
-  background-color: #020151; /* Azul oscuro */
+  background-color: #020151;
 }
 
 .about-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 2rem;
-  max-width: 1400px;
+  gap: 3rem;
+  max-width: 1600px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 2rem; /* padding lateral para no pegar al borde */
 }
 
 .about-text {
@@ -36,10 +36,10 @@
 }
 
 .about-title {
-  color: #940466; /* Morado */
-  font-size: 3rem; /* ligeramente más pequeño para pantallas grandes */
+  color: #940466;
+  font-size: 3rem; /* reducimos un poco para laptops pequeñas */
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 1.3rem;
 }
 
 .about.dark .about-title {
@@ -48,8 +48,8 @@
 
 .about-description {
   color: #020151;
-  font-size: 1.1rem; /* texto más compacto */
-  line-height: 1.6;
+  font-size: 1.2rem;
+  line-height: 1.8;
 }
 
 .about.dark .about-description {
@@ -57,13 +57,13 @@
 }
 
 .about-image {
-  flex: 0.4; /* ajusta para que la foto no quede tan pequeña */
+  flex: 0.5;
   display: flex;
   justify-content: center;
 }
 
 .about-image img {
-  max-width: 400px;
+  max-width: 400px; /* un poco más pequeña para que se vea proporcionada */
   width: 100%;
   border-radius: 20px;
   object-fit: cover;
@@ -71,12 +71,12 @@
 
 /* ===== BOTÓN LEER MÁS ===== */
 .read-more-btn {
-  display: none;
+  display: none; 
   margin-top: 0.3rem;
   background: none;
   border: none;
   color: #940466;
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
   text-decoration: underline;
@@ -95,9 +95,8 @@
 .about-buttons {
   display: flex;
   gap: 1rem;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   flex-wrap: wrap;
-  align-items: center;
 }
 
 .btn {
@@ -105,12 +104,12 @@
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  padding: 0.65rem 1.2rem; /* más compacto */
+  padding: 0.75rem 1.5rem;
   background-color: #940466;
   color: #e7e6e6;
   border: none;
   border-radius: 50px;
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
   text-decoration: none;
@@ -118,13 +117,14 @@
 }
 
 .btn-icon {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 .btn:hover {
   background-color: #7a0353;
 }
 
+/* Modo oscuro - Botones */
 .about.dark .btn {
   background-color: #e7e6e6;
   color: #940466;
@@ -135,9 +135,30 @@
 }
 
 /* ===== RESPONSIVE ===== */
+
+/* Laptops medianas */
+@media (max-width: 1366px) {
+  .about {
+    padding: 4rem 5rem;
+  }
+
+  .about-title {
+    font-size: 2.7rem;
+  }
+
+  .about-description {
+    font-size: 1.1rem;
+  }
+
+  .about-image img {
+    max-width: 350px;
+  }
+}
+
+/* Tablets y laptops pequeñas */
 @media (max-width: 1024px) {
   .about {
-    padding: 3rem 5rem;
+    padding: 3rem 3rem;
   }
 
   .about-title {
@@ -151,31 +172,28 @@
   .about-image img {
     max-width: 300px;
   }
-
-  .about-buttons {
-    justify-content: flex-start;
-  }
 }
 
+/* Móviles → dos columnas, dos filas en los botones */
 @media (max-width: 768px) {
   .about {
-    padding: 2rem 3rem;
+    padding: 2rem 1.5rem;
   }
 
   .about-content {
     flex-direction: column;
     text-align: center;
     gap: 1.5rem;
-    padding: 0 1.5rem;
   }
 
   .about-title {
     font-size: 2.2rem;
+    margin-bottom: 0.5rem;
   }
 
   .about-description {
     font-size: 0.95rem;
-    margin: 1rem 2rem;
+    margin: 1rem 0;
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -194,17 +212,20 @@
     max-width: 250px;
   }
 
+  /* Botones en dos columnas, dos filas */
   .about-buttons {
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    justify-items: center;
+    margin-top: 1rem;
   }
 
   .about-buttons .btn {
-    flex: 1 1 calc(50% - 1rem);
-    min-width: 120px;
-    max-width: 180px;
-    font-size: 0.85rem;
+    width: 100%;
+    max-width: 140px;
+    font-size: 0.9rem;
     padding: 0.5rem 1rem;
   }
 }
+ 
