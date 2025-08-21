@@ -14,6 +14,11 @@ const Header = () => {
     i18n.changeLanguage(i18n.language === 'es' ? 'en' : 'es');
   };
 
+  const handleMenuLinkClick = () => {
+    setIsMenuOpen(false); // Cierra el menú móvil al hacer click
+    window.scrollTo({ top: 0, behavior: 'smooth' }); // Opcional para Inicio
+  };
+
   return (
     <>
       <header className="site-header">
@@ -28,7 +33,9 @@ const Header = () => {
 
         {/* Menú de escritorio */}
         <nav className="desktop-menu">
-          <a href="#home">{t('header.home')}</a>
+          <a href="#home" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+            {t('header.home')}
+          </a>
           <a href="#about">{t('header.about')}</a>
           <a href="#experience">{t('header.experience')}</a>
           <a href="#projects">{t('header.projects')}</a>
@@ -63,14 +70,12 @@ const Header = () => {
       <nav className={`mobile-menu ${isMenuOpen ? 'active' : ''}`}>
         <button className="close-btn" onClick={() => setIsMenuOpen(false)}>×</button>
 
-        <a href="#home" onClick={() => setIsMenuOpen(false)}>{t('header.home')}</a>
-        <a href="#about" onClick={() => setIsMenuOpen(false)}>{t('header.about')}</a>
-        <a href="#experience" onClick={() => setIsMenuOpen(false)}>{t('header.experience')}</a>
-        <a href="#projects" onClick={() => setIsMenuOpen(false)}>{t('header.projects')}</a>
-        <a href="#brands" onClick={() => setIsMenuOpen(false)}>{t('header.brands')}</a>
-        <a href="#contact" onClick={() => setIsMenuOpen(false)}>{t('header.contact')}</a>
+        <a href="#home" onClick={handleMenuLinkClick}>{t('header.home')}</a>
+        <a href="#about" onClick={handleMenuLinkClick}>{t('header.about')}</a>
+        <a href="#experience" onClick={handleMenuLinkClick}>{t('header.experience')}</a>
+        <a href="#projects" onClick={handleMenuLinkClick}>{t('header.projects')}</a>
+        <a href="#contact" onClick={handleMenuLinkClick}>{t('header.contact')}</a>
 
-        {/* Sliders dentro del menú móvil */}
         <div className="mobile-controls">
           <div className="switch" onClick={changeLanguage}>
             <div className={`slider ${i18n.language === 'es' ? 'left' : 'right'}`}>
