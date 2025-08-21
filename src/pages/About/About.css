@@ -12,7 +12,7 @@
 
 /* ===== SECCIÓN ABOUT ===== */
 .about {
-  padding: 4rem 0.5rem;
+  padding: 4rem 10rem; /* mismo padding lateral que Experience */
   background-color: var(--color-white);
   font-family: 'Mont', sans-serif;
 }
@@ -28,7 +28,6 @@
   gap: 3rem;
   max-width: 1600px;
   margin: 0 auto;
-  padding: 0 2rem; /* padding lateral agregado */
 }
 
 .about-text {
@@ -135,16 +134,21 @@
 }
 
 /* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .about {
+    padding: 3rem 5rem; /* reducimos padding lateral en tablets */
+  }
+}
+
 @media (max-width: 768px) {
   .about {
-    padding: 1rem 0.5rem;
+    padding: 2rem 3rem; /* mismo comportamiento que Experience en móvil */
   }
 
   .about-content {
     flex-direction: column;
     text-align: center;
     gap: 1.5rem;
-    padding: 0 1.5rem; /* padding lateral ajustado para móvil */
   }
 
   .about-title {
