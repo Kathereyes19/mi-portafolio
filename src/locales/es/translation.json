@@ -110,65 +110,65 @@
     ]
   },
   "projects": {
-  "title": "Proyectos",
-  "viewMore": "Ver proyecto completo",
-  "items": [
-    {
-      "title": "REKO",
-      "description": "Algoritmo personalizado para la recomendación de películas en plataformas de streaming.",
-      "image": "reko.png",
-      "url": "https://www.behance.net/gallery/213609409/Reko-Personalized-algorithm"
-    },
-    {
-      "title": "Vitrina Digital",
-      "description": "Desarrollo de una vitrina digital para la comercialización de inmuebles de Bancóldex.",
-      "image": "vitrina.png",
-      "url": "https://www.behance.net/gallery/213364243/Vitrina-Digital-Bancoldex"
-    },
-    {
-      "title": "Nebulash",
-      "description": "Juego phygital inmersivo donde los jugadores exploran una galaxia desconocida.",
-      "image": "nebulash.png",
-      "url": "https://www.behance.net/gallery/208267865/Nebulash-phygital-game"
-    },
-    {
-      "title": "Buscador de empleo",
-      "description": "Rediseño de una plataforma de búsqueda de empleo para optimizar la experiencia.",
-      "image": "buscador.png",
-      "url": "https://www.behance.net/gallery/200294665/UX-study-case-DSE-8"
-    },
-    {
-      "title": "Morse Match",
-      "description": "Diseño de una aplicación interactiva para el aprendizaje de código Morse.",
-      "image": "morsematch.png",
-      "url": "https://www.behance.net/gallery/197815355/Morse-Match"
-    },
-    {
-      "title": "BEGO | Cantarma",
-      "description": "Desarrollo de estrategia ATL y BTL para el posicionamiento de marca.",
-      "image": "bego.png",
-      "url": "https://www.behance.net/gallery/170194765/BEGO-ESTRATEGIA-ATL-Y-BTL-PMH2023"
-    },
-    {
-      "title": "H.A.M.I.L.T.O.N",
-      "description": "Presentación de lentes inteligentes para optimizar el bienestar del usuario.",
-      "image": "hamilton.png",
-      "url": "https://www.behance.net/gallery/192626081/HAMILTON-Contact-lenses-concept-technology"
-    },
-    {
-      "title": "NutriDay",
-      "description": "Diseño del empaque y piezas de lanzamiento para los nuevos sabores de yogurt.",
-      "image": "nutriday.png",
-      "url": "https://www.behance.net/gallery/140137845/NUTRIDAY-PACKAGING"
-    },
-    {
-      "title": "Branding AECOM",
-      "description": "Rediseño de marca e identidad visual coherente y moderna.",
-      "image": "aecom.png",
-      "url": "https://drive.google.com/file/d/1YBEaU8TIkpYsdTxWr1QA4x_7SwdtIrvw/view?usp=sharing"
-    }
-  ]
-},
+    "title": "Proyectos",
+    "viewMore": "Ver proyecto completo",
+    "items": [
+      {
+        "title": "REKO",
+        "description": "Algoritmo personalizado para la recomendación de películas en plataformas de streaming.",
+        "image": "reko.png",
+        "url": "https://www.behance.net/gallery/213609409/Reko-Personalized-algorithm"
+      },
+      {
+        "title": "Vitrina Digital",
+        "description": "Desarrollo de una vitrina digital para la comercialización de inmuebles de Bancóldex.",
+        "image": "vitrina.png",
+        "url": "https://www.behance.net/gallery/213364243/Vitrina-Digital-Bancoldex"
+      },
+      {
+        "title": "Nebulash",
+        "description": "Juego phygital inmersivo donde los jugadores exploran una galaxia desconocida.",
+        "image": "nebulash.png",
+        "url": "https://www.behance.net/gallery/208267865/Nebulash-phygital-game"
+      },
+      {
+        "title": "Buscador de empleo",
+        "description": "Rediseño de una plataforma de búsqueda de empleo para optimizar la experiencia.",
+        "image": "buscador.png",
+        "url": "https://www.behance.net/gallery/200294665/UX-study-case-DSE-8"
+      },
+      {
+        "title": "Morse Match",
+        "description": "Diseño de una aplicación interactiva para el aprendizaje de código Morse.",
+        "image": "morsematch.png",
+        "url": "https://www.behance.net/gallery/197815355/Morse-Match"
+      },
+      {
+        "title": "BEGO | Cantarma",
+        "description": "Desarrollo de estrategia ATL y BTL para el posicionamiento de marca.",
+        "image": "bego.png",
+        "url": "https://www.behance.net/gallery/170194765/BEGO-ESTRATEGIA-ATL-Y-BTL-PMH2023"
+      },
+      {
+        "title": "H.A.M.I.L.T.O.N",
+        "description": "Presentación de lentes inteligentes para optimizar el bienestar del usuario.",
+        "image": "hamilton.png",
+        "url": "https://www.behance.net/gallery/192626081/HAMILTON-Contact-lenses-concept-technology"
+      },
+      {
+        "title": "NutriDay",
+        "description": "Diseño del empaque y piezas de lanzamiento para los nuevos sabores de yogurt.",
+        "image": "nutriday.png",
+        "url": "https://www.behance.net/gallery/140137845/NUTRIDAY-PACKAGING"
+      },
+      {
+        "title": "Branding AECOM",
+        "description": "Rediseño de marca e identidad visual coherente y moderna.",
+        "image": "aecom.png",
+        "url": "https://drive.google.com/file/d/1YBEaU8TIkpYsdTxWr1QA4x_7SwdtIrvw/view?usp=sharing"
+      }
+    ]
+  },
   "contact": {
     "text": "Contáctame si quieres crear proyectos innovadores juntos",
     "phone": "+57 3014386847",
@@ -177,5 +177,9 @@
     "linkedinUrl": "https://www.linkedin.com/in/katherine-reyes-60859a307/",
     "instagram": "@kathereyes.studio",
     "instagramUrl": "https://www.instagram.com/kathereyes.studio/"
+  },
+  "footer": {
+    "name": "Katherine Reyes",
+    "role": "Diseñadora de medios interactivos | Comunicadora con enfoque digital"
   }
 }

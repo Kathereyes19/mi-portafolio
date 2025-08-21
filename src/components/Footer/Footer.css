@@ -1,0 +1,30 @@
+/* ===== Footer ===== */
+.site-footer {
+  padding: 1rem 1rem;
+  font-family: 'Mont', sans-serif;
+  text-align: center;
+  font-size: 1.3rem;
+  border-top: 2px solid #940466; /* línea morada superior */
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ===== Modo claro ===== */
+.site-footer.light {
+  background-color: #f7f7f7;
+  color: #020151; /* texto azul oscuro */
+}
+
+/* ===== Modo oscuro ===== */
+.site-footer.dark {
+  background-color: #020151;
+  color: #ffffff; /* texto blanco */
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .site-footer {
+    font-size: 0.9rem;
+    padding: 1.5rem 1rem;
+  }
+}
