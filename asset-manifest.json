@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/mi-portafolio/static/css/main.16fb7973.css",
+    "main.js": "/mi-portafolio/static/js/main.797e5252.js",
+    "static/js/453.4e3d1a3e.chunk.js": "/mi-portafolio/static/js/453.4e3d1a3e.chunk.js",
+    "static/media/foto-katherine.png": "/mi-portafolio/static/media/foto-katherine.5ac44fde170d05899758.png",
+    "static/media/reko.png": "/mi-portafolio/static/media/reko.ac851b5800ba9a8debdb.png",
+    "static/media/nutriday.png": "/mi-portafolio/static/media/nutriday.a871f77e0cc414e231f2.png",
+    "static/media/hamilton.png": "/mi-portafolio/static/media/hamilton.070456fe1551eea91eb4.png",
+    "static/media/vitrina.png": "/mi-portafolio/static/media/vitrina.858f55781b80a7c068b5.png",
+    "static/media/buscador.png": "/mi-portafolio/static/media/buscador.7d7c7dea6942dac2ced2.png",
+    "static/media/bego.png": "/mi-portafolio/static/media/bego.830e5cce3565b4e71d14.png",
+    "static/media/nebulash.png": "/mi-portafolio/static/media/nebulash.e3832da71f0f2c30c15d.png",
+    "static/media/morsematch.png": "/mi-portafolio/static/media/morsematch.c7997594b0d7a4f2fa5a.png",
+    "static/media/Katherine_Reyes_CV.pdf": "/mi-portafolio/static/media/Katherine_Reyes_CV.ce9c2d8acff59fbaa801.pdf",
+    "static/media/certificados.png": "/mi-portafolio/static/media/certificados.fbf40fb7280584ee9edd.png",
+    "static/media/Mont-Regular.ttf": "/mi-portafolio/static/media/Mont-Regular.e797167c18f9897bb607.ttf",
+    "static/media/Mont-Bold.ttf": "/mi-portafolio/static/media/Mont-Bold.3675b597d3ffb2b75168.ttf",
+    "static/media/universidad.jpg": "/mi-portafolio/static/media/universidad.b1ebc6f40d9692360f61.jpg",
+    "static/media/texture.png": "/mi-portafolio/static/media/texture.cdca0e48761cd0b632fa.png",
+    "static/media/companies-light.png": "/mi-portafolio/static/media/companies-light.9cb54a7b039bf94a3ee1.png",
+    "static/media/aecom.png": "/mi-portafolio/static/media/aecom.1783265f6c7bcfb55591.png",
+    "static/media/tools-dark.png": "/mi-portafolio/static/media/tools-dark.5862ac447b9a4bcf5471.png",
+    "static/media/companies-dark.png": "/mi-portafolio/static/media/companies-dark.29eb4e72a2f81f1220da.png",
+    "static/media/tools.png": "/mi-portafolio/static/media/tools.13322c813df649a6aa28.png",
+    "static/media/logo-light.png": "/mi-portafolio/static/media/logo-light.75582453b53642812648.png",
+    "static/media/logo-darkII.png": "/mi-portafolio/static/media/logo-darkII.48d45b73db6556e1bbd3.png",
+    "static/media/logo-dark.png": "/mi-portafolio/static/media/logo-dark.d3b69351d90510b18459.png",
+    "index.html": "/mi-portafolio/index.html",
+    "main.16fb7973.css.map": "/mi-portafolio/static/css/main.16fb7973.css.map",
+    "main.797e5252.js.map": "/mi-portafolio/static/js/main.797e5252.js.map",
+    "453.4e3d1a3e.chunk.js.map": "/mi-portafolio/static/js/453.4e3d1a3e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.16fb7973.css",
+    "static/js/main.797e5252.js"
+  ]
+}
