@@ -216,7 +216,7 @@
   .about-buttons {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    gap: 1rem 3.2rem;
     justify-items: center;
     margin-top: 1rem;
   }
