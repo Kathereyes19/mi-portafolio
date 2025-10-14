@@ -64,7 +64,7 @@
 
 .about-image img {
   max-width: 550px;
-  width: 100%;
+  width: 150%;
   border-radius: 20px;
   object-fit: cover;
 }
@@ -94,12 +94,21 @@
 /* ===== BOTONES PRINCIPALES ===== */
 .about-buttons {
   display: flex;
+  justify-content: center; /* centra los botones */
+  align-items: center;
   gap: 1rem;
   margin-top: 2rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap; /* 🔥 evita que bajen a segunda línea */
+  overflow-x: auto; /* 🔥 scroll horizontal si no caben */
+  scrollbar-width: none; /* oculta scroll en navegadores modernos */
+}
+
+.about-buttons::-webkit-scrollbar {
+  display: none; /* oculta scroll en navegadores WebKit */
 }
 
 .btn {
+  flex: 0 0 auto; /* 🔥 evita que los botones se achiquen */
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -124,7 +133,7 @@
   background-color: #6e15ff;
   transform: translateY(-5px);
   box-shadow: 0px 6px 12px rgba(0,0,0,0.25);
-  }
+}
 
 /* Modo oscuro - Botones */
 .about.dark .btn {
@@ -176,7 +185,7 @@
   }
 }
 
-/* Móviles → dos columnas, dos filas en los botones */
+/* Móviles */
 @media (max-width: 768px) {
   .about {
     padding: 2rem 1.5rem;
@@ -214,20 +223,16 @@
     max-width: 250px;
   }
 
-  /* Botones en dos columnas, dos filas */
+  /* 🔥 Botones mantienen una sola línea horizontal con scroll si es necesario */
   .about-buttons {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem 3.2rem;
-    justify-items: center;
+    justify-content: flex-start;
+    gap: 0.8rem;
     margin-top: 1rem;
+    padding: 0 0.5rem;
   }
 
   .about-buttons .btn {
-    width: 100%;
-    max-width: 140px;
     font-size: 0.9rem;
-    padding: 0.5rem 1rem;
+    padding: 0.6rem 1.2rem;
   }
 }
- 
