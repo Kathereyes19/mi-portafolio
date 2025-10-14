@@ -12,7 +12,7 @@
 
 /* ===== SECCIÓN ABOUT ===== */
 .about {
-  padding: 4rem 10rem; /* suficiente padding lateral en desktop */
+  padding: 4rem 8rem; /* suficiente padding lateral en desktop */
   background-color: var(--color-white);
   font-family: 'Mont', sans-serif;
 }
@@ -63,7 +63,7 @@
 }
 
 .about-image img {
-  max-width: 550px;
+  max-width: 450px;
   width: 150%;
   border-radius: 20px;
   object-fit: cover;
