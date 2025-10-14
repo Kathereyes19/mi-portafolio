@@ -8,7 +8,7 @@
 
 /* Títulos rosados en Light */
 .education-section .edu-title {
-  color: #940466;
+  color: #ec00fa;
   font-size: 4rem;
   font-weight: 700;
   margin: 0rem;
@@ -59,12 +59,12 @@
   top: 2rem; /* alineado vertical al texto */
   width: 15px;
   height: 15px;
-  background-color: #940466; /* rosado en Light */
+  background-color: #ec00fa; /* rosado en Light */
   border-radius: 50%;
 }
 
 .education-section.dark .edu-item::before {
-  background-color: #940466; /* blanco en Dark */
+  background-color: #ec00fa; /* blanco en Dark */
 }
 
 .edu-career {
@@ -154,7 +154,7 @@
     font-size: 1.05rem;
     font-weight: 700;
     margin: 0.4rem 0;
-    background: #940466;
+    background: #ec00fa;
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 10px rgba(9, 9, 9, 0.08);
     color: #ffffff;
@@ -162,11 +162,11 @@
 
   .accordion-btn:hover {
     transform: translateY(-1px);
-    background: #940466
+    background: #c800d2
   }
 
   .accordion-btn.active {
-    background: #6c024a;
+    background: #ec00fa;
   }
 
   .education-section.dark .accordion-btn {
@@ -206,12 +206,12 @@
     top: 2.2rem;
     width: 10px;
     height: 10px;
-    background-color: #940466;
+    background-color: #ec00fa;
     border-radius: 50%;
   }
 
   .education-section.dark .accordion-inner .edu-item::before {
-    background-color: #940466;
+    background-color: #ec00fa;
   }
 
   .accordion-inner .edu-career {

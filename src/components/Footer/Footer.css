@@ -4,7 +4,7 @@
   font-family: 'Mont', sans-serif;
   text-align: center;
   font-size: 1.3rem;
-  border-top: 2px solid #940466; /* línea morada superior */
+  border-top: 2px solid #ec00fa; /* línea morada superior */
   box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s ease, color 0.3s ease;
 }

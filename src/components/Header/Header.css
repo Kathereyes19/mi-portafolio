@@ -32,7 +32,7 @@
 }
 
 .logo {
-  height: 3rem;
+  height: 4rem;
 }
 
 .site-name {
@@ -70,7 +70,7 @@
 .switch {
   width: 4rem;
   height: 2.2rem;
-  background-color: var(--color-secondary);
+  background-color: #8236fb;
   border-radius: 999px;
   display: flex;
   align-items: center;
@@ -80,7 +80,7 @@
 }
 
 .switch:hover {
-  background-color: #7a0353;
+  background-color: #6d15fb;
 }
 
 .slider {

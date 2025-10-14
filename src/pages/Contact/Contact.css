@@ -1,7 +1,7 @@
 /* ===== Sección ===== */
 .contact-section {
   padding: 4rem 1rem;
-  background: linear-gradient(135deg, #020151, #940466); /* degradado azul a morado */
+  background: #020151;
   color: #ffffff;
   font-family: 'Mont', sans-serif;
 }
@@ -26,8 +26,9 @@
 }
 
 .contact-logo {
-  width: 150px; /* tamaño fijo del logo */
-  margin-bottom: 1rem;
+  width: 400px; /* tamaño fijo del logo */
+  margin-top: 3rem;
+  margin-bottom: 0rem;
 }
 
 .contact-text {

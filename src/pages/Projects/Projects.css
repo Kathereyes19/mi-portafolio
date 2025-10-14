@@ -17,7 +17,7 @@
   font-size: 4rem;
   margin-bottom: 2rem;
   font-weight: 700;
-  color: #940466;
+  color: #ec00fa;
 }
 
 .projects-section.dark .projects-title {
@@ -116,7 +116,7 @@
 /* ===== Botón ===== */
 .project-btn {
   align-self: flex-start;
-  background: #940466;
+  background: #ec00fa;
   color: #ffffff;
   padding: 0.6rem 1.2rem;
   border-radius: 12px;
@@ -126,7 +126,7 @@
 }
 
 .project-btn:hover {
-  background: #72034f;
+  background: #c800d2;
 }
 
 /* ===== Flechas ===== */
@@ -138,7 +138,7 @@
 }
 
 .arrow-btn {
-  background: #940466;
+  background: #ec00fa;
   border: none;
   color: white;
   border-radius: 50%;
@@ -148,7 +148,7 @@
 }
 
 .arrow-btn:hover {
-  background: #72034f;
+  background: #c800d3;
 }
 
 /* ===== Responsive ===== */

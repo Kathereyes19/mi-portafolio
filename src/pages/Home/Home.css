@@ -1,99 +1,29 @@
 .home {
   width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
-  background: linear-gradient(to right, #020151, #940466);
-  overflow: hidden;
-  font-family: 'Mont', sans-serif; /* Fuente Mont aplicada */
-}
-
-.home-center {
-  flex: 1;
-  display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.home-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-/* Logo grande y centrado */
-.home-logo {
-  width: 600px;
-  height: auto;
-  z-index: 2;
-  display: block;
-  margin: 0;
-  padding: 0;
-}
-
-/* Subtítulo pegado al logo */
-.home-subtitle {
-  margin: 0;
-  padding: 0;
-  line-height: 1.2;
-  font-size: 1.4rem;
-  font-weight: 400;
-  color: #ffffff;
-  max-width: 800px;
-  font-family: 'Montserrat', sans-serif; /* Forzamos Mont */
-}
-
-/* Texturas */
-.home-texture {
+  overflow: hidden;
   position: relative;
-  height: 100%;
-  max-height: 100%;
-  opacity: 1;
-  pointer-events: none;
+  background-color: var(--bg-section, #000); /* opcional, por si el banner no cubre todo */
 }
 
-.home-texture.left {
-  order: -1;
-}
-
-.home-texture.right {
-  order: 1;
+/* Imagen principal del banner */
+.home-banner {
+  width: 600%;
+  height: auto;
+  max-width: 3000px; /* para evitar que se estire en pantallas muy grandes */
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
 }
 
 /* --- Responsive --- */
-@media (max-width: 1024px) {
-  .home-logo {
-    width: 450px;
-  }
-  
-  .home-subtitle {
-    font-size: 1.2rem;
-  }
-}
-
 @media (max-width: 768px) {
-  .home {
-    flex-direction: column;
+  .home-banner {
+    width: 100%;
     height: auto;
-    padding: 2rem 0;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .home-logo {
-    width: 280px;
-  }
-
-  .home-subtitle {
-    font-size: 1rem;
-    padding: 0 1rem;
-    text-align: center;
-  }
-
-  /* Ocultar texturas en responsive */
-  .home-texture {
-    display: none;
+    object-fit: contain;
   }
 }
+

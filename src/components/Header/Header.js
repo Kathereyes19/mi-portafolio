@@ -28,7 +28,6 @@ const Header = () => {
             alt="Logo"
             className="logo"
           />
-          <span className="site-name">Katherine Reyes</span>
         </div>
 
         {/* Menú de escritorio */}

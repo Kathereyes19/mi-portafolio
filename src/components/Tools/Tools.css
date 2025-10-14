@@ -1,20 +1,23 @@
 .tools-section {
+  position: relative;
   overflow: hidden;
   width: 100%;
   background-color: var(--bg-section);
-  padding: 2.5rem;
+  padding: 2.5rem 0; /* padding vertical solamente */
+  box-sizing: border-box;
 }
 
 .tools-track {
   display: flex;
+  align-items: center;
+  gap: 2rem; /* reemplaza margin-right */
   width: max-content;
   animation: scroll 20s linear infinite;
 }
 
 .tools-img {
   flex-shrink: 0;
-  height: 100px; /* ajusta según necesites */
-  margin-right: 2rem; /* separación opcional */
+  height: 100px;
 }
 
 /* Animación horizontal continua */
@@ -32,17 +35,16 @@
   .tools-img {
     height: 55px;
   }
+  .tools-track {
+    gap: 1rem;
+  }
 }
 
 @media (max-width: 480px) {
   .tools-img {
     height: 45px;
   }
-}
-
-.tools-section {
-  overflow: hidden;
-  width: 100%;
-  background-color: var(--bg-section);
-  padding: 1rem;
+  .tools-track {
+    gap: 0.8rem;
+  }
 }

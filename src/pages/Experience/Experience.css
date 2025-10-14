@@ -22,7 +22,7 @@
 .experience-title {
   font-size: 4rem;
   margin: 0rem;
-  color: #940466; /* morado en modo claro */
+  color: #ec00fa;
   font-weight: 700;
     font-family: 'Mont', sans-serif;
 
@@ -52,7 +52,7 @@
   top: 1.7rem;
   width: 15px;
   height: 15px;
-  background-color: #940466;
+  background-color: #ec00fa;
   border-radius: 50%;
 }
 
