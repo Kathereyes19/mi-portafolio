@@ -21,7 +21,7 @@
   },
   "about": {
     "title": "About Me",
-    "description": "I am Katherine Reyes, a student of Interactive Media Design (10th semester) and Communication with a Digital focus (8th semester) at Universidad Icesi, passionate about graphic design, visual content creation, and digital project management. Throughout my studies, I have gained experience in UX/UI design, multimedia production, social media management, and project coordination, participating in both academic settings and freelance initiatives. My approach combines aesthetics and functionality to develop innovative visual solutions that communicate effectively. I consider myself a creative, organized, and proactive person, with technical skills in tools such as Adobe Creative Suite and Figma, as well as content creation for social media and execution of digital strategies.",
+    "description": "I am Katherine Reyes, a student of Interactive Media Design and Communication with a Digital focus at Universidad Icesi, passionate about graphic design, visual content creation, and digital project management. Throughout my studies, I have gained experience in UX/UI design, multimedia production, social media management, and project coordination, participating in both academic settings and freelance initiatives. My approach combines aesthetics and functionality to develop innovative visual solutions that communicate effectively. I consider myself a creative, organized, and proactive person, with technical skills in tools such as Adobe Creative Suite and Figma, as well as content creation for social media and execution of digital strategies.",
     "cv": "Download CV",
     "readMore": "Read more",
     "readLess": "Read less"
@@ -75,12 +75,12 @@
       {
         "career": "Interactive Media Design",
         "university": "Universidad Icesi - Cali, Colombia",
-        "detail": "10th semester"
+        "detail": "2021 - Present"
       },
       {
         "career": "Communication with Digital Focus",
         "university": "Universidad Icesi - Cali, Colombia",
-        "detail": "8th semester"
+        "detail": "2022 - Present"
       },
       {
         "career": "International Semester",
@@ -175,7 +175,7 @@
     "email": "reyeskatherine119@gmail.com",
     "linkedin": "Katherine Reyes",
     "linkedinUrl": "https://www.linkedin.com/in/katherine-reyes-60859a307/",
-    "instagram": "@kathereyes.studio",
+    "instagram": "@konexa.studio",
     "instagramUrl": "https://www.instagram.com/konexa.studio/"
   },
   "footer": {
