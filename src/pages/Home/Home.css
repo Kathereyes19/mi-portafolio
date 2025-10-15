@@ -23,7 +23,7 @@
 @media (max-width: 768px) {
   .home-banner {
     width: 400%;
-    margin-right: 4rem;
+    margin-right: 1rem;
     height: auto;
     object-fit: contain;
   }
