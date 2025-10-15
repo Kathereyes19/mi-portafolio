@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/mi-portafolio/static/css/main.cab08b8d.css",
-    "main.js": "/mi-portafolio/static/js/main.dd29c32c.js",
+    "main.js": "/mi-portafolio/static/js/main.e41b5e0b.js",
     "static/js/453.4e3d1a3e.chunk.js": "/mi-portafolio/static/js/453.4e3d1a3e.chunk.js",
-    "static/media/banner-home.png": "/mi-portafolio/static/media/banner-home.361325fba3338b563483.png",
     "static/media/foto-katherine.png": "/mi-portafolio/static/media/foto-katherine.5b7ae6111f3a7f68a19d.png",
     "static/media/reko.png": "/mi-portafolio/static/media/reko.ac851b5800ba9a8debdb.png",
+    "static/media/banner-home.png": "/mi-portafolio/static/media/banner-home.49d7d15233a100ae9666.png",
     "static/media/nutriday.png": "/mi-portafolio/static/media/nutriday.a871f77e0cc414e231f2.png",
     "static/media/hamilton.png": "/mi-portafolio/static/media/hamilton.070456fe1551eea91eb4.png",
     "static/media/vitrina.png": "/mi-portafolio/static/media/vitrina.858f55781b80a7c068b5.png",
@@ -28,11 +28,11 @@
     "static/media/tools.png": "/mi-portafolio/static/media/tools.13322c813df649a6aa28.png",
     "index.html": "/mi-portafolio/index.html",
     "main.cab08b8d.css.map": "/mi-portafolio/static/css/main.cab08b8d.css.map",
-    "main.dd29c32c.js.map": "/mi-portafolio/static/js/main.dd29c32c.js.map",
+    "main.e41b5e0b.js.map": "/mi-portafolio/static/js/main.e41b5e0b.js.map",
     "453.4e3d1a3e.chunk.js.map": "/mi-portafolio/static/js/453.4e3d1a3e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cab08b8d.css",
-    "static/js/main.dd29c32c.js"
+    "static/js/main.e41b5e0b.js"
   ]
 }
