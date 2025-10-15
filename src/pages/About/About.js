@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './About.css';
 import profileImage from '../../assets/img/foto-katherine.png';
-import cvFile from '../../assets/docs/Katherine_Reyes_CV.pdf';
+import cvFileEs from '../../assets/docs/cv_es_katherinereyes.pdf';
+import cvFileEn from '../../assets/docs/cv_en_katherinereyes.pdf';
 import { useTranslation } from 'react-i18next';
 import { useTheme } from '../../context/ThemeContext';
 
@@ -15,7 +16,7 @@ const About = () => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
-  // Detectar si es mobile para mostrar el botón
+  // Detectar si es mobile
   useEffect(() => {
     const checkScreenSize = () => {
       setIsMobile(window.innerWidth <= 768);
@@ -28,6 +29,9 @@ const About = () => {
   const toggleReadMore = () => {
     setIsExpanded(!isExpanded);
   };
+
+  // Seleccionar archivo CV según el idioma
+  const cvFile = i18n.language === 'es' ? cvFileEs : cvFileEn;
 
   return (
     <section className={`about ${theme === 'dark' ? 'dark' : ''}`} id="about">
@@ -49,6 +53,7 @@ const About = () => {
             <a href={cvFile} download className="btn">
               <FaDownload className="btn-icon" /> {t('about.cv')}
             </a>
+
             <a
               href="https://www.linkedin.com/in/katherine-reyes-60859a307"
               target="_blank"
@@ -57,6 +62,7 @@ const About = () => {
             >
               <FaLinkedin className="btn-icon" /> LinkedIn
             </a>
+
             <a
               href="https://www.behance.net/katherinereyes119"
               target="_blank"
@@ -65,8 +71,9 @@ const About = () => {
             >
               <FaBehance className="btn-icon" /> Behance
             </a>
+
             <a
-              href="https://www.instagram.com/kathereyes.studio/"
+              href="https://www.instagram.com/konexa.studio/"
               target="_blank"
               rel="noopener noreferrer"
               className="btn"
