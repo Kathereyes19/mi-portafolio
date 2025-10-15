@@ -5,7 +5,7 @@
   align-items: center;
   overflow: hidden;
   position: relative;
-  background-color: var(--bg-section, #000); /* opcional, por si el banner no cubre todo */
+  background-color: var(--bg-section, #020151); /* opcional, por si el banner no cubre todo */
 }
 
 /* Imagen principal del banner */
@@ -16,6 +16,7 @@
   object-fit: cover;
   display: block;
   margin: 0 auto;
+  margin-right: 4.5rem;
 }
 
 /* --- Responsive --- */

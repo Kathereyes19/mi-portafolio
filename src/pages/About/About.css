@@ -37,7 +37,7 @@
 
 .about-title {
   color: #ec00fa;
-  font-size: 3rem; /* reducimos un poco para laptops pequeñas */
+  font-size: 4rem; /* reducimos un poco para laptops pequeñas */
   font-weight: 700;
   margin-bottom: 1.3rem;
 }
