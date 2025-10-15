@@ -200,4 +200,8 @@
   .site-name {
     font-size: 1.2rem; /* Nombre más pequeño en móvil */
   }
+
+  .logo {
+  height: 2.5rem;
+}
 }

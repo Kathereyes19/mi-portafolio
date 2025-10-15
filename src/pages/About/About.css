@@ -148,7 +148,7 @@
 
 /* ===== RESPONSIVE ===== */
 
-/* Laptops medianas */
+/* 🖥️ Laptops medianas */
 @media (max-width: 1366px) {
   .about {
     padding: 4rem 5rem;
@@ -167,7 +167,7 @@
   }
 }
 
-/* Tablets y laptops pequeñas */
+/* 💻 Tablets y laptops pequeñas */
 @media (max-width: 1024px) {
   .about {
     padding: 3rem 3rem;
@@ -186,17 +186,18 @@
   }
 }
 
-/* Móviles */
+/* 📱 Móviles → dos columnas, dos filas en los botones */
 @media (max-width: 768px) {
   .about {
-    padding: 2rem 1.5rem;
+    padding: 1rem 1.5rem;
   }
 
   .about-content {
     flex-direction: column;
     text-align: center;
-    gap: 1.5rem;
+    padding: 0rem;
   }
+
 
   .about-title {
     font-size: 2.2rem;
@@ -224,16 +225,19 @@
     max-width: 250px;
   }
 
-  /* 🔥 Botones mantienen una sola línea horizontal con scroll si es necesario */
+  /* 🔘 Botones en dos columnas, dos filas */
   .about-buttons {
-    justify-content: flex-start;
-    gap: 0.8rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem 1rem;
+    justify-items: center;
     margin-top: 1rem;
-    padding: 0 0.5rem;
   }
 
   .about-buttons .btn {
+    width: 100%;
+    max-width: 140px;
     font-size: 0.9rem;
-    padding: 0.6rem 1.2rem;
+    padding: 0.5rem 1rem;
   }
 }
